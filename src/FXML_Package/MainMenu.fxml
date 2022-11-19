@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <BorderPane layoutY="-1.0" prefHeight="760.0" prefWidth="1201.0">
+         <left>
+            <VBox fx:id="vboxLeft" prefHeight="760.0" prefWidth="325.0" BorderPane.alignment="CENTER">
+               <children>
+                  <Label fx:id="lblBakery" prefHeight="84.0" prefWidth="184.0" stylesheets="@../CSS/MainMenu.css" text="Bakery">
+                     <VBox.margin>
+                        <Insets left="89.0" top="14.0" />
+                     </VBox.margin></Label>
+                  <Button fx:id="btnOrder" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Order Tab">
+                     <graphic>
+                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                           <image>
+                              <Image url="@../Icon/order.png" />
+                           </image>
+                        </ImageView>
+                     </graphic>
+                     <font>
+                        <Font name="Tahoma" size="20.0" />
+                     </font>
+                  </Button>
+               </children>
+            </VBox>
+         </left>
+      </BorderPane>
+   </children>
+</AnchorPane>

@@ -1,0 +1,12 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+#lblBakery{
+    -fx-font-family:'Pacifico', cursive;
+    -fx-font-size: 48px;
+}
+#vboxLeft{
+    -fx-background-color: #D8B0C2;
+}
+#btnOrder{
+    -fx-background-color: #DA93AA;
+}

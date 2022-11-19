@@ -1,0 +1,17 @@
+#paneLeft{
+    -fx-background-color: #F2F2F2;
+}
+#paneRight{
+    -fx-background-color: #DEF5E5;
+}
+.text-field{
+    -fx-background-radius: 25px;
+    -fx-border-radius: 25px;
+    /*-fx-border-color: black;*/
+}
+.button{
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+    -fx-border-color: black;
+    -fx-background-color: #8EC3B0;
+}

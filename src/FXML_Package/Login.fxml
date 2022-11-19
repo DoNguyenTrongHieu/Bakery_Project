@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DAO_Package.Login_Controller">
+   <children>
+      <BorderPane prefHeight="562.0" prefWidth="861.0">
+         <left>
+            <Pane fx:id="paneLeft" prefHeight="562.0" prefWidth="424.0" BorderPane.alignment="CENTER">
+               <children>
+                  <ImageView fitHeight="449.0" fitWidth="426.0" layoutX="-1.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@../Icon/Background.jpg" />
+                     </image>
+                  </ImageView>
+               </children></Pane>
+         </left>
+         <center>
+            <Pane fx:id="paneRight" prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS/Login.css" BorderPane.alignment="CENTER">
+               <children>
+                  <Label layoutX="79.0" layoutY="92.0" prefHeight="35.0" prefWidth="120.0" text="Sign In">
+                     <font>
+                        <Font name="Ebrima" size="24.0" />
+                     </font></Label>
+                  <TextField fx:id="txtUserName" layoutX="74.0" layoutY="170.0" prefHeight="42.0" prefWidth="304.0" promptText="Username" styleClass="text-field" stylesheets="@../CSS/Login.css" />
+                  <Button fx:id="btnSignIn" layoutX="177.0" layoutY="356.0" mnemonicParsing="false" onAction="#loginApplication" prefHeight="31.0" prefWidth="99.0" text="Sign In" />
+                  <PasswordField fx:id="txtPassword" layoutX="74.0" layoutY="256.0" prefHeight="42.0" prefWidth="304.0" promptText="Password" />
+                  <Label fx:id="lblLogin" layoutX="205.0" layoutY="50.0" text="vO" />
+               </children></Pane>
+         </center>
+      </BorderPane>
+   </children>
+</AnchorPane>

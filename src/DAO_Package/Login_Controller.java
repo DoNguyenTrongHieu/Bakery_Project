@@ -24,28 +24,15 @@ public class Login_Controller extends Component {
     private Scene scene;
     private Parent root;
     @FXML
-    Label lblLogin;
+    Label lblThongBao;
     @FXML
     Button btnSignIn;
     @FXML
     TextField txtUserName;
     @FXML
     PasswordField txtPassword;
-
     //    DAO_NhanVien dao_nhanVien = new DAO_NhanVien();
     public void loginApplication(ActionEvent event) throws IOException {
-//        String taiKhoan = txtUserName.getText();
-//        String matKhau = new String(txtPassword.getText());
-//        Entity_NhanVien nhanVien = dao_nhanVien.checkByID(taiKhoan,matKhau);
-//        if(nhanVien == null) {
-//            JOptionPane.showMessageDialog(this,"Sai Tai Khoan Hoac Mat Khau");
-//        }else{
-//            FXMLLoader loader = new FXMLLoader(getClass().getResource("../FXML_Package/MainMenu.fxml"));
-//            root = loader.load();
-//            stage  = (Stage)((Node)event.getSource()).getScene().getWindow();
-//            scene = new Scene(root);
-//            stage.setScene(scene);
-//            stage.show();
 //        }
         if (txtUserName.getText().isBlank() == false && txtPassword.getText().isBlank() == false) {
             if (validateLogin() == true) {
@@ -66,21 +53,20 @@ public class Login_Controller extends Component {
         Connected_JDBC connected_jdbc = new Connected_JDBC();
         Connection connection = connected_jdbc.getConnection();
 
-        String verifyLogin = "select COUNT(1) from nhanvien where TAIKHOAN='" + txtUserName.getText() + "' AND MATKHAU='" + txtPassword.getText() + "'";
-        try {
-            Statement statement = connection.createStatement();
-            ResultSet resultSet = statement.executeQuery(verifyLogin);
 
-            while (resultSet.next()) {
-                if (resultSet.getInt(Integer.valueOf(resultSet.getString(1))) == 1) {
-                    return true;
-                } else {
-                    lblLogin.setText("Chiu");
+            String verifyLogin = "select COUNT(1) from nhanvien where TAIKHOAN='" + txtUserName.getText() + "' AND MATKHAU='" + txtPassword.getText() + "'";
+            try {
+                Statement statement = connection.createStatement();
+                ResultSet resultSet = statement.executeQuery(verifyLogin);
+
+                while (resultSet.next()) {
+                    if (resultSet.getInt(Integer.valueOf(resultSet.getString(1))) == 1) {
+                        return true;
+                    }
                 }
+            } catch (Exception e) {
+                e.printStackTrace();
             }
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
         return false;
     }
 }

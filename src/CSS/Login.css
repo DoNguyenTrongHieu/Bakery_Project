@@ -2,7 +2,7 @@
     -fx-background-color: #F2F2F2;
 }
 #paneRight{
-    -fx-background-color: #DEF5E5;
+    -fx-background-color: #6FBFB7;
 }
 .text-field{
     -fx-background-radius: 25px;
@@ -10,8 +10,13 @@
     /*-fx-border-color: black;*/
 }
 .button{
-    -fx-background-radius: 5px;
-    -fx-border-radius: 5px;
-    -fx-border-color: black;
-    -fx-background-color: #8EC3B0;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-background-color: #D0F2F2;
+}
+.button:hover{
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+    -fx-border-color: #CAF9DF;
+    -fx-background-color: #CAF9DF;
 }

@@ -5,8 +5,14 @@
     -fx-font-size: 48px;
 }
 #vboxLeft{
-    -fx-background-color: #D8B0C2;
+    -fx-background-color: #6FBFB7;
 }
-#btnOrder{
-    -fx-background-color: #DA93AA;
+#achorPaneConter{
+    -fx-background-color: #D0F2F2;
+}
+.button{
+    -fx-background-color: #6FBFB7;
+}
+.button:hover{
+    -fx-background-color: #D0F2F2;
 }

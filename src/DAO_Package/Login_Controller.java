@@ -36,7 +36,8 @@ public class Login_Controller extends Component {
 //        }
         if (txtUserName.getText().isBlank() == false && txtPassword.getText().isBlank() == false) {
             if (validateLogin() == true) {
-                Parent root = (Parent) FXMLLoader.load(this.getClass().getResource("../FXML_Package/MainMenu.fxml"));
+                FXMLLoader Loader = new FXMLLoader(getClass().getResource("../FXML_Package/MainMenu.fxml"));
+                root = (Parent) Loader.load();
                 scene = new Scene(root);
                 scene.getStylesheets().add(getClass().getResource("../CSS/MainMenu.css").toExternalForm());
                 stage = (Stage) ((Node) event.getSource()).getScene().getWindow();

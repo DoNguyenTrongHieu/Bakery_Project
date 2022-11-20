@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="DAO_Package.Menu_Controller">
    <children>
       <BorderPane layoutY="-1.0" prefHeight="760.0" prefWidth="1201.0">
          <left>
@@ -38,7 +38,7 @@
                         <Insets top="10.0" />
                      </VBox.margin>
                   </Button>
-                  <Button fx:id="btnOrder1" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Customer">
+                  <Button fx:id="btnCustomer" mnemonicParsing="false" onAction="#openSceneCustomer" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Customer">
                      <graphic>
                         <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
                            <image>

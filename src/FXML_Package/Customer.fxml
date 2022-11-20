@@ -3,6 +3,8 @@
 <?import javafx.geometry.Insets?>
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -102,30 +104,48 @@
          <center>
             <AnchorPane fx:id="achorPaneConter" prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS/MainMenu.css" BorderPane.alignment="CENTER">
                <children>
-                  <TextField fx:id="txtName" layoutX="172.0" layoutY="129.0" prefHeight="37.0" prefWidth="264.0" stylesheets="@../CSS/Customer.css" />
-                  <Label fx:id="lblTaoThanhVien" layoutX="95.0" layoutY="50.0" prefHeight="35.0" prefWidth="209.0" stylesheets="@../CSS/Customer.css" text="Tạo thành viên">
+                  <TextField fx:id="txtName" layoutX="203.0" layoutY="92.0" prefHeight="37.0" prefWidth="264.0" stylesheets="@../CSS/Customer.css" />
+                  <Label fx:id="lblTaoThanhVien" layoutX="84.0" layoutY="28.0" prefHeight="35.0" prefWidth="209.0" stylesheets="@../CSS/Customer.css" text="Tạo thành viên">
                      <font>
                         <Font name="Tahoma" size="24.0" />
                      </font>
                   </Label>
-                  <Label layoutX="26.0" layoutY="134.0" prefHeight="26.0" prefWidth="83.0" text="Name">
+                  <Label layoutX="29.0" layoutY="97.0" prefHeight="26.0" prefWidth="83.0" text="Name">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <Label layoutX="26.0" layoutY="203.0" prefHeight="26.0" prefWidth="115.0" text="Số điện thoại">
+                  <Label layoutX="29.0" layoutY="153.0" prefHeight="26.0" prefWidth="115.0" text="Số điện thoại">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtName1" layoutX="172.0" layoutY="198.0" prefHeight="37.0" prefWidth="264.0" stylesheets="@../CSS/Customer.css" />
-                  <Label layoutX="29.0" layoutY="273.0" prefHeight="29.0" prefWidth="133.0" text="Nhân viên hỗ trợ">
+                  <TextField fx:id="txtName1" layoutX="203.0" layoutY="148.0" prefHeight="37.0" prefWidth="264.0" stylesheets="@../CSS/Customer.css" />
+                  <Label layoutX="32.0" layoutY="211.0" prefHeight="29.0" prefWidth="143.0" text="Nhân viên hỗ trợ">
                      <font>
                         <Font size="17.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="txtName11" layoutX="172.0" layoutY="269.0" prefHeight="37.0" prefWidth="264.0" stylesheets="@../CSS/Customer.css" />
-                  <Button id="btnThemThanhVien" layoutX="174.0" layoutY="368.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" stylesheets="@../CSS/Customer.css" text="Thêm thành viên" />
+                  <TextField fx:id="txtName11" layoutX="203.0" layoutY="207.0" prefHeight="37.0" prefWidth="264.0" stylesheets="@../CSS/Customer.css" />
+                  <Button id="btnThemThanhVien" layoutX="273.0" layoutY="263.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" stylesheets="@../CSS/Customer.css" text="Thêm thành viên" />
+                  <TableView layoutX="-1.0" layoutY="352.0" prefHeight="409.0" prefWidth="878.0" AnchorPane.leftAnchor="-1.0" AnchorPane.rightAnchor="-1.0">
+                    <columns>
+                      <TableColumn prefWidth="101.0" text="Mã khách hàng" />
+                      <TableColumn prefWidth="199.0" text="Tên khách hàng" />
+                        <TableColumn prefWidth="130.0" text="Số điện thoại" />
+                        <TableColumn prefWidth="117.0" text="Nhân viên hỗ trợ" />
+                        <TableColumn prefWidth="146.0" text="Ưu đãi" />
+                        <TableColumn prefWidth="112.0" text="Tổng tiền chi" />
+                        <TableColumn prefWidth="71.0" text="Số lần mua " />
+                    </columns>
+                  </TableView>
+                  <TextField fx:id="txtName2" layoutX="598.0" layoutY="92.0" prefHeight="37.0" prefWidth="264.0" stylesheets="@../CSS/Customer.css" />
+                  <Label layoutX="502.0" layoutY="98.0" prefHeight="26.0" prefWidth="83.0" text="Search">
+                     <font>
+                        <Font size="17.0" />
+                     </font>
+                  </Label>
+                  <Button id="btnThemThanhVien" layoutX="668.0" layoutY="151.0" mnemonicParsing="false" prefHeight="31.0" prefWidth="125.0" stylesheets="@../CSS/Customer.css" text="search" />
                </children></AnchorPane>
          </center>
       </BorderPane>

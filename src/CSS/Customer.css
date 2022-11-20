@@ -1,0 +1,16 @@
+@import url('https://fonts.googleapis.com/css2?family=Arvo&display=swap');
+
+.label{
+    -fx-font-family: 'Arvo', serif;
+}
+.text-field{
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+}.button{
+    -fx-background-color: #B2D0DB;
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+ }
+ #btnThemThanhVien:hover{
+     -fx-background-color: #B2DBD0 ;
+ }

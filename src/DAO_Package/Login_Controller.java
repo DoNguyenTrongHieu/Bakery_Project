@@ -55,7 +55,7 @@ public class Login_Controller extends Component {
         Connection connection = connected_jdbc.getConnection();
 
 
-            String verifyLogin = "select COUNT(1) from nhanvien where TAIKHOAN='" + txtUserName.getText() + "' AND MATKHAU='" + txtPassword.getText() + "'";
+            String verifyLogin = "select COUNT(1) from chucvu where TAIKHOAN='" + txtUserName.getText() + "' AND MATKHAU='" + txtPassword.getText() + "'";
             try {
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(verifyLogin);

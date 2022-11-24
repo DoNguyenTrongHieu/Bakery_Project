@@ -14,6 +14,15 @@
 .button{
     -fx-background-color: #6FBFB7;
 }
+#btnBuy{
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+}
+#btnBuy:hover{
+    -fx-background-color: #CAE0F9;
+}
 .button:hover{
     -fx-background-color: #D0F2F2;
 }
@@ -25,5 +34,11 @@
     -fx-border-radius: 5px;
 }
 #pane1:hover{
-    -fx-background-color: #B2DBD0;
+    -fx-background-color: #B2D0DB;
+}
+#btnCart{
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+    -fx-border-width: 0;
+    -fx-background-radius: 0;
 }

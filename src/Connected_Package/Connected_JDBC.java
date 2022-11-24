@@ -54,7 +54,7 @@ public class Connected_JDBC {
 
     public Connection getConnection() {
         String serverName = "TRONGHIEU";
-        String databaseName = "QuanLyTiemBanh2";
+        String databaseName = "QuanLyTiemBanh";
         String databaseUsername = "sa";
         String databasePassword = "1234";
         String url = "jdbc:sqlserver://" + serverName + ":1433;DatabaseName=" + databaseName + ";encrypt=true;trustServerCertificate=true";

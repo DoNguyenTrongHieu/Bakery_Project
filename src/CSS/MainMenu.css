@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria&display=swap');
 
 #lblBakery{
     -fx-font-family:'Pacifico', cursive;
@@ -7,7 +8,7 @@
 #vboxLeft{
     -fx-background-color: #6FBFB7;
 }
-#achorPaneConter{
+#conTainPane{
     -fx-background-color: #D0F2F2;
 }
 .button{
@@ -15,4 +16,14 @@
 }
 .button:hover{
     -fx-background-color: #D0F2F2;
+}
+.Label{
+    -fx-font-family: 'Alexandria', sans-serif;
+}
+.pane{
+    -fx-background-radius: 5px;
+    -fx-border-radius: 5px;
+}
+#pane1:hover{
+    -fx-background-color: #B2DBD0;
 }

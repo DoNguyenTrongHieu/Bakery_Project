@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2&display=swap');
+
+#lblThanhToan{
+    -fx-font-size: 30px;
+    -fx-font-family: 'Baloo 2', cursive;
+}
+#paneLayout{
+    -fx-background-color: #D0F2F2;
+}
+.Button{
+    -fx-background-color: #6FBFB7;
+    -fx-background-radius: 10px;
+    -fx-border-radius: 10px;
+}

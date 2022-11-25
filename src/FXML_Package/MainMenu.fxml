@@ -4,20 +4,21 @@
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ScrollPane?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.shape.Rectangle?>
 <?import javafx.scene.text.Font?>
-<?import javafx.scene.text.Text?>
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="760.0" prefWidth="1201.0" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <BorderPane layoutY="-1.0" prefHeight="760.0" prefWidth="1201.0">
          <left>
-            <VBox fx:id="vboxLeft" prefHeight="760.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" BorderPane.alignment="CENTER">
+            <VBox fx:id="vboxLeft" minHeight="760.0" minWidth="325.0" prefHeight="760.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" BorderPane.alignment="CENTER">
                <children>
                   <Label fx:id="lblBakery" prefHeight="84.0" prefWidth="184.0" stylesheets="@../CSS/MainMenu.css" text="Bakery">
                      <VBox.margin>
@@ -25,9 +26,9 @@
                      </VBox.margin></Label>
                   <Button fx:id="btnOrder" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Order Tab">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/order.png" />
+                              <Image url="@../Icon/order32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -40,9 +41,9 @@
                   </Button>
                   <Button fx:id="btnOrder1" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Customer">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/Customer.png" />
+                              <Image url="@../Icon/customer-review32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -52,9 +53,9 @@
                   </Button>
                   <Button fx:id="btnOrder11" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Attendance">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/attendance.png" />
+                              <Image url="@../Icon/immigration32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -67,9 +68,9 @@
                   </Button>
                   <Button fx:id="btnOrder111" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Product">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/product.png" />
+                              <Image url="@../Icon/product32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -85,9 +86,9 @@
                   </Button>
                   <Button fx:id="btnOrder112" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Log out">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/logout.png" />
+                              <Image url="@../Icon/log-out32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -104,103 +105,317 @@
          <center>
             <AnchorPane fx:id="achorPaneConter" prefHeight="200.0" prefWidth="200.0" stylesheets="@../CSS/MainMenu.css" BorderPane.alignment="CENTER">
                <children>
-                  <Rectangle fx:id="border1" arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="31.0" layoutY="186.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fx:id="pic1" fitHeight="147.0" fitWidth="162.0" layoutX="38.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="243.0" layoutY="186.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fitHeight="147.0" fitWidth="162.0" layoutX="250.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="455.0" layoutY="186.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fitHeight="147.0" fitWidth="162.0" layoutX="462.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="31.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fitHeight="147.0" fitWidth="162.0" layoutX="38.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="243.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fitHeight="147.0" fitWidth="162.0" layoutX="250.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="666.0" layoutY="186.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fitHeight="147.0" fitWidth="162.0" layoutX="673.0" layoutY="193.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="455.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fitHeight="147.0" fitWidth="162.0" layoutX="462.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Rectangle arcHeight="5.0" arcWidth="5.0" fill="#b2d0db" height="121.0" layoutX="666.0" layoutY="374.0" stroke="BLACK" strokeType="INSIDE" width="176.0" />
-                  <ImageView fitHeight="147.0" fitWidth="162.0" layoutX="673.0" layoutY="381.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@../Icon/cake.jpg" />
-                     </image>
-                  </ImageView>
-                  <Text layoutX="32.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="32.0" layoutY="349.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <Text layoutX="244.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="244.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <Text layoutX="32.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="32.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <Text layoutX="244.0" layoutY="514.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="244.0" layoutY="532.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <Text layoutX="456.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="456.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <Text layoutX="456.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="456.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <Text layoutX="667.0" layoutY="332.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="667.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <Text layoutX="667.0" layoutY="518.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bánh Gato" wrappingWidth="174.13671875">
-                     <font>
-                        <Font size="19.0" />
-                     </font>
-                  </Text>
-                  <Text layoutX="667.0" layoutY="536.0" strokeType="OUTSIDE" strokeWidth="0.0" text="100,000vnd" />
-                  <ComboBox layoutX="31.0" layoutY="97.0" prefWidth="150.0" promptText="Catoge" />
+                  <ScrollPane prefHeight="760.0" prefWidth="876.0" stylesheets="@../CSS/MainMenu.css">
+                     <content>
+                        <Pane id="conTainPane" fx:id="pane1" prefHeight="760.0" prefWidth="876.0" stylesheets="@../CSS/MainMenu.css">
+                           <children>
+                              <ComboBox layoutX="39.0" layoutY="109.0" prefWidth="150.0" promptText="Catoge" />
+                              <Pane id="pane1" fx:id="paneItem1" layoutX="38.0" layoutY="205.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border1" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic1" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="141.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem2" layoutX="238.0" layoutY="205.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border11" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic11" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem3" layoutX="438.0" layoutY="205.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border111" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic111" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem4" layoutX="638.0" layoutY="205.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border1111" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic1111" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem5" layoutX="38.0" layoutY="391.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border12" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic12" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem6" layoutX="238.0" layoutY="391.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border112" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic112" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem7" layoutX="438.0" layoutY="391.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border1112" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic1112" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem8" layoutX="638.0" layoutY="391.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border11111" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic11111" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem9" layoutX="38.0" layoutY="577.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border121" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic121" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem10" layoutX="238.0" layoutY="577.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border1121" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic1121" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem11" layoutX="438.0" layoutY="577.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border11121" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic11121" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Pane id="pane1" fx:id="paneItem12" layoutX="638.0" layoutY="577.0" prefHeight="186.0" prefWidth="200.0" styleClass="pane" stylesheets="@../CSS/MainMenu.css">
+                                 <children>
+                                    <Rectangle fx:id="border111111" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="111.0" layoutX="18.0" layoutY="13.0" stroke="BLACK" strokeType="INSIDE" width="163.0" />
+                                    <ImageView fx:id="pic111111" fitHeight="147.0" fitWidth="160.0" layoutX="19.0" layoutY="15.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/cake.jpg" />
+                                       </image>
+                                    </ImageView>
+                                    <Label layoutX="19.0" layoutY="134.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="Bánh Gato" />
+                                    <Label layoutX="19.0" layoutY="154.0" styleClass="Label" stylesheets="@../CSS/MainMenu.css" text="100,000vnd" />
+                                    <Button fx:id="btnBuy" layoutX="116.0" layoutY="142.0" mnemonicParsing="false" prefHeight="28.0" prefWidth="59.0" stylesheets="@../CSS/MainMenu.css" textFill="TRANSPARENT">
+                                       <graphic>
+                                          <ImageView fitHeight="32.0" fitWidth="45.0" pickOnBounds="true" preserveRatio="true">
+                                             <image>
+                                                <Image url="@../Icon/buy32.png" />
+                                             </image>
+                                          </ImageView>
+                                       </graphic>
+                                       <padding>
+                                          <Insets top="10.0" />
+                                       </padding>
+                                    </Button>
+                                 </children>
+                              </Pane>
+                              <Button fx:id="btnCart" layoutX="691.0" layoutY="80.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="73.0" stylesheets="@../CSS/MainMenu.css">
+                                 <graphic>
+                                    <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
+                                       <image>
+                                          <Image url="@../Icon/carts32.png" />
+                                       </image>
+                                    </ImageView>
+                                 </graphic>
+                              </Button>
+                              <Label layoutX="747.0" layoutY="113.0" text="1" textFill="#d02b2b">
+                                 <font>
+                                    <Font name="System Bold" size="13.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </Pane>
+                     </content>
+                  </ScrollPane>
                </children></AnchorPane>
          </center>
       </BorderPane>

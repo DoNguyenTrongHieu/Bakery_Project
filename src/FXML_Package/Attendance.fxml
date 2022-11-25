@@ -23,9 +23,9 @@
                      </VBox.margin></Label>
                   <Button fx:id="btnOrder" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Order Tab">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/order.png" />
+                              <Image url="@../Icon/order32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -38,9 +38,9 @@
                   </Button>
                   <Button fx:id="btnOrder1" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Customer">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/Customer.png" />
+                              <Image url="@../Icon/customer-review32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -50,9 +50,9 @@
                   </Button>
                   <Button fx:id="btnOrder11" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Attendance">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/attendance.png" />
+                              <Image url="@../Icon/immigration32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -65,9 +65,9 @@
                   </Button>
                   <Button fx:id="btnOrder111" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Product">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/product.png" />
+                              <Image url="@../Icon/product32.png" />
                            </image>
                         </ImageView>
                      </graphic>
@@ -83,9 +83,9 @@
                   </Button>
                   <Button fx:id="btnOrder112" mnemonicParsing="false" prefHeight="71.0" prefWidth="325.0" stylesheets="@../CSS/MainMenu.css" text="Log out">
                      <graphic>
-                        <ImageView fitHeight="24.0" fitWidth="24.0" pickOnBounds="true" preserveRatio="true">
+                        <ImageView fitHeight="32.0" fitWidth="32.0" pickOnBounds="true" preserveRatio="true">
                            <image>
-                              <Image url="@../Icon/logout.png" />
+                              <Image url="@../Icon/log-out32.png" />
                            </image>
                         </ImageView>
                      </graphic>
